@@ -1,0 +1,37 @@
+
+
+import time
+import numpy as np
+import random
+from time import sleep
+import sys
+import math
+
+def add(x, y):
+    return x + y
+def subtract(x, y):
+    return x - y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    return x / y
+
+print("This a Magic Square creator")
+sleep(1)
+UserNumber = int(input("Please input an arbitrary number between 21 and 65:"))
+
+UserNumber2 = UserNumber - 20
+UserNumber3 = UserNumber - 21
+UserNumber4 = UserNumber - 18
+UserNumber5 = UserNumber - 19
+
+sleep(0.5)
+print("here is your magic square:")
+sleep(0.5)
+print(" ")
+print(UserNumber2, " 1  12  7")
+print("11  8 ", UserNumber3, " 2")
+print("5  10  3 ", UserNumber4,)
+print("4 ", UserNumber5, " 6  9")
+print(" ")
+print("Now, Add up the numbers in all of the rows, then colums, then try diagonals. Does it add up to your number")
