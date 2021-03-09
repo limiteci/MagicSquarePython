@@ -6,6 +6,8 @@ from time import sleep
 import sys
 import math
 
+#This imports the modules that I typically use
+
 def add(x, y):
     return x + y
 def subtract(x, y):
@@ -14,15 +16,21 @@ def multiply(x, y):
     return x * y
 def divide(x, y):
     return x / y
+    
+#This is a match operator that I included incase I needed it (I did not)
 
 print("This a Magic Square creator")
 sleep(1)
 UserNumber = int(input("Please input an arbitrary number between 21 and 65:"))
 
+#Asks user for number in raw input
+
 UserNumber2 = UserNumber - 20
 UserNumber3 = UserNumber - 21
 UserNumber4 = UserNumber - 18
 UserNumber5 = UserNumber - 19
+
+#Creates the 4 numbers neccesary for displaying the magic square
 
 sleep(0.5)
 print("here is your magic square:")
@@ -32,5 +40,10 @@ print(UserNumber2, " 1  12  7")
 print("11  8 ", UserNumber3, " 2")
 print("5  10  3 ", UserNumber4,)
 print("4 ", UserNumber5, " 6  9")
+
+#Displays the Numbers in a helpful grid shape.
+
 print(" ")
 print("Now, Add up the numbers in all of the rows, then colums, then try diagonals. Does it add up to your number")
+
+
